@@ -6,4 +6,4 @@ For more information on the motive and purpose, see the [Blog post](https://deve
 
 # Acknowledgement
 
-This document was developed under the leadership of [Derek Leist](https://github.com/dleist4life) and benefited from contributions from many people inside IBM as well as others.
+This document was developed thanks to contributions from technical experts across IBM Research, in addition to feedback and contributions from external collaborators, under the leadership of Derek Leist.
