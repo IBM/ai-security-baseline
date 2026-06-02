@@ -6,6 +6,7 @@ package baseline
 import (
 	"context"
 	"fmt"
+	"io"
 	"os"
 	"path/filepath"
 
@@ -35,12 +36,8 @@ func (l *Loader) Load() (*types.Baseline, error) {
 	b := &types.Baseline{}
 
 	// Load the lexicon:
-	lexicon, err := l.loadLexicon()
-	if err != nil {
-		return nil, fmt.Errorf("error reading lexicon: %w", err)
-	}
+	lexicon := l.loadLexicon()
 	b.Lexicon = lexicon
-
 	catalog, err := l.loadMetadata()
 	if err != nil {
 		return nil, fmt.Errorf("error reading metadata: %w", err)
@@ -65,18 +62,24 @@ func decodeYAMLFile(path string, target any) error {
 
 	decoder := yaml.NewDecoder(file, yaml.DisallowUnknownField())
 	if err := decoder.Decode(target); err != nil {
+		if err == io.EOF {
+			// if the file is simply empty don't throw an error
+			return nil
+		}
 		return fmt.Errorf("error decoding YAML: %w", err)
 	}
 	return nil
 }
 
 // loadLexicon decodes the controlled vocabulary used across the baseline.
-func (l *Loader) loadLexicon() ([]types.LexiconEntry, error) {
+// If loading or decoding fails, it prints a warning and returns an empty slice.
+func (l *Loader) loadLexicon() []types.LexiconEntry {
 	var lexicon []types.LexiconEntry
 	if err := decodeYAMLFile(filepath.Join(l.DataPath, LexiconFilename), &lexicon); err != nil {
-		return nil, err
+		fmt.Fprintf(os.Stderr, "\n⚠️  Warning: error loading or decoding lexicon: %v\n", err)
+		return []types.LexiconEntry{}
 	}
-	return lexicon, nil
+	return lexicon
 }
 
 // loadMetadata decodes the catalog-level metadata.
