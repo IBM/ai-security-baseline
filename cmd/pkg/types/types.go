@@ -6,14 +6,7 @@ package types
 import "github.com/gemaraproj/go-gemara"
 
 var ControlFamilies = []string{
-	"AC",
-	"BR",
-	"DO",
-	"GV",
-	"LE",
-	"QA",
-	"SA",
-	"VM",
+	"Baseline",
 }
 
 // Struct for holding the entire YAML structure

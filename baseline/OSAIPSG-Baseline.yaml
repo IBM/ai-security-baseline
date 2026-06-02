@@ -64,7 +64,7 @@ groups:
     description: >-
       Controls related to system documentation, explainability, risk
       documentation, and incident reporting.
-guidelines:
+controls:
   # ── Level 1 · Governance and Accountability ──
   - id: osaipgs-1.1
     title: Contributor Roles and Responsibilities

@@ -1,0 +1,16 @@
+# Lexicon
+#
+# The lexicon is a list of terms and their
+# definitions as they are used throughout the Open
+# Source Project Security Baseline.
+#
+# Synonyms are optional and can be included to
+# streamline automation in the event that other
+# words or phrases should link to the term.
+#
+
+
+- term: TBD
+  definition: |
+    Some definition.
+
