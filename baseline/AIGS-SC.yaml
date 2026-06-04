@@ -1,0 +1,156 @@
+group:
+  id: SC
+  title: Supply Chain Security
+  description: >-
+    Controls related to securing the AI supply chain, including data sourcing,
+    component scanning, and model provenance.
+
+controls:
+  # ── Level 1 · Supply Chain Security ──
+  - id: AIGS-SC-01
+    title: Secure Data Sourcing
+    objective: >-
+      Protect data integrity by implementing controls to detect and prevent the
+      unintentional sourcing of poisoned data, with documentation and disclosure
+      of these controls.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-01-01
+        text: >-
+          The project MUST implement controls to detect and prevent the
+          unintentional sourcing of poisoned data. Controls MUST be documented
+          and disclosed.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-SC-02
+    title: Ethical Web Crawling
+    objective: >-
+      Ensure ethical data sourcing practices when web crawling is used, by
+      respecting robots.txt requirements, clearly identifying the crawler,
+      and disclosing web crawling activity in project documentation.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-02-01
+        text: >-
+          To the extent web crawling is used to source data, web crawling activity
+          MUST respect robots.txt requirements, the crawler MUST be clearly
+          identified, and web crawling activity MUST be disclosed in project
+          documentation.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-SC-03
+    title: Change Control
+    objective: >-
+      Establish robust change management through use of a version control system
+      and a documented process for reviewing and approving changes.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-03-01
+        text: >-
+          The project MUST use a version control system and have a documented
+          process for reviewing and approving changes.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  # ── Level 2 · Supply Chain Security ──
+  - id: AIGS-SC-04
+    title: AI Components Scanning
+    objective: >-
+      Secure the supply chain by scanning embedded AI components as part of development
+      workflows, including CI/CD pipelines, to prevent application security risks from
+      malicious or otherwise compromised components.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-04-01
+        text: >-
+          Embedded AI components MUST be scanned as part of development workflows,
+          including CI/CD pipelines, to prevent application security risks from
+          malicious or otherwise compromised components.
+        applicability:
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-SC-05
+    title: Training Pipeline Integrity
+    objective: >-
+      Ensure training pipeline integrity by documenting and securing the training pipeline
+      used to produce model artifacts, including dependencies, training code, and
+      environment configuration.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-05-01
+        text: >-
+          The project MUST document and secure the training pipeline used to
+          produce model artifacts, including dependencies, training code, and
+          environment configuration.
+        applicability:
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-SC-06
+    title: Model Provenance
+    objective: >-
+      Establish model traceability by maintaining provenance records linking model artifacts,
+      training datasets, training code, and training parameters.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-06-01
+        text: >-
+          The project MUST maintain provenance records linking model artifacts,
+          training datasets, training code, and training parameters.
+        applicability:
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-SC-07
+    title: Reproducible Builds
+    objective: >-
+      Enable verification through support for reproducible model builds,
+      where feasible, such that independent parties can recreate the model artifacts from
+      disclosed inputs.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-07-01
+        text: >-
+          Where feasible, the project SHOULD support reproducible model builds
+          such that independent parties can recreate the model artifacts from
+          disclosed inputs.
+        applicability:
+          - maturity-2
+          - maturity-3
+        recommendation: >-
+          Provide sufficient documentation and tooling for independent parties
+          to reproduce model builds from disclosed inputs.
+
+  # ── Level 3 · Supply Chain Security ──
+  - id: AIGS-SC-08
+    title: Model Integrity
+    objective: >-
+      Ensure artifact integrity by signing AI models, model files, and/or other release
+      artifacts with cryptographic tools and verifying them before deployment
+      to prevent the introduction of untrusted components.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-08-01
+        text: >-
+          The project MUST sign AI models, model files, and/or other release
+          artifacts with cryptographic tools and verify them before deployment
+          to prevent the introduction of untrusted components.
+        applicability:
+          - maturity-3

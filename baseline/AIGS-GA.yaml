@@ -1,0 +1,185 @@
+group:
+  id: GA
+  title: Governance and Accountability
+  description: >-
+    Controls related to organizational governance, roles, policies,
+    and accountability for AI projects.
+
+controls:
+  # ── Level 1 · Governance and Accountability ──
+  - id: AIGS-GA-01
+    title: Contributor Roles and Responsibilities
+    objective: >-
+      Establish clear documentation of roles and responsibilities for maintainers
+      and contributors throughout the AI project lifecycle from development to
+      deployment and ongoing monitoring.
+    group: GA
+    assessment-requirements:
+      - id: AIGS-GA-01-01
+        text: |
+          The project MUST document the roles and responsibilities for maintainers
+          and contributors to the AI project lifecycle from development to
+          deployment and ongoing monitoring.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+    state: Active
+
+  - id: AIGS-GA-02
+    title: Model Governance
+    objective: >-
+      Ensure transparency through written, documented disclosure of AI models
+      ingested in, called, or otherwise used in the development or deployment
+      of the open source AI project.
+    group: GA
+    state: Active
+    assessment-requirements:
+      - id: AIGS-GA-02-01
+        title: Minimum Model Disclosure Requirements
+        text: >-
+          Minimum disclosure requirements MUST include the model name, developer,
+          release date, license, model description, deployment status (as
+          necessary), and URL to the open source model repository (if available)
+          or model release announcement.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-GA-03
+    title: Data Governance
+    objective: >-
+      Achieve transparency by disclosing datasets ingested in or otherwise used in the
+      development or deployment of the open source AI project, including
+      datasets used for training, testing, and validation.
+    group: GA
+    state: Active
+    assessment-requirements:
+      - id: AIGS-GA-03-01
+        title: Minimum Dataset Disclosure Requirements
+        text: >-
+          Minimum disclosure requirements for each dataset MUST include the name,
+          country of origin, license, description, data processing (if any), and
+          public URL (if available).
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-GA-04
+    title: Licensing
+    objective: >-
+      Establish clear licensing by specifying a license for the model weights
+      and model files while the project is active.
+    group: GA
+    state: Active
+    assessment-requirements:
+      - id: AIGS-GA-04-01
+        text: >-
+          While active, the project MUST specify a license for the model weights
+          and model files.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-GA-05
+    title: Ethics and Intended Use
+    objective: >-
+      Define and document the intended use of the open source
+      AI project, including the ethical principles that guide open source AI
+      project development and deployment.
+    group: GA
+    state: Active
+    assessment-requirements:
+      - id: AIGS-GA-05-01
+        text: >-
+          The project MUST define and document the intended use of the open source
+          AI project, including the ethical principles that guide open source AI
+          project development and deployment.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-GA-06
+    title: Project Inventory
+    objective: >-
+      Maintain comprehensive visibility through an inventory of components, tooling, systems
+      and applications, disclosed within the README of the repository where the
+      project is made available.
+    group: GA
+    state: Active
+    assessment-requirements:
+      - id: AIGS-GA-06-01
+        text: >-
+          The project MUST maintain an inventory of its components, tooling, systems
+          and applications, disclosed within the README of the repository where the
+          project is made available.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  # ── Level 2 · Governance and Accountability ──
+  - id: AIGS-GA-07
+    title: AI Policy
+    objective: >-
+      Establish governance framework by defining an AI policy with principles that guide all
+      activities of the organization related to AI and processes for handling
+      deviations and exceptions to policy.
+    group: GA
+    state: Active
+    assessment-requirements:
+      - id: AIGS-GA-07-01
+        title: AI Policy Requirements
+        text: >-
+          The AI policy SHOULD consider topic-specific aspects where necessary
+          to provide additional guidance or provide cross-references to other
+          security and governance policies dealing with these core aspects:
+          AI resources and assets, AI system impact assessment scope, and AI
+          project secure development.
+        applicability:
+          - maturity-2
+          - maturity-3
+        recommendation: >-
+          Address AI resources and assets, AI system impact assessment scope,
+          and AI project secure development in the AI policy or through
+          cross-references to related policies.
+
+  # ── Level 3 · Governance and Accountability ──
+  - id: AIGS-GA-08
+    title: Regulatory Compliance
+    objective: >-
+      Demonstrate regulatory awareness by disclosing compliance status to the extent
+      the open source AI project meets regulatory requirements and standards for the
+      deployment of AI models and systems.
+    group: GA
+    state: Active
+    assessment-requirements:
+      - id: AIGS-GA-08-01
+        text: >-
+          To the extent the open source AI project meets regulatory requirements
+          and standards for the deployment of AI models and systems, the project
+          MUST disclose (non-)compliance.
+        applicability:
+          - maturity-3
+
+  - id: AIGS-GA-09
+    title: AI Bill of Materials
+    objective: >-
+      Enable downstream risk management by making structured disclosures of relevant
+      model and data metadata available in machine-readable format while the project
+      is active, to inform downstream risk-based controls.
+    group: GA
+    state: Active
+    assessment-requirements:
+      - id: AIGS-GA-09-01
+        text: >-
+          While active, structured disclosures of relevant model and data metadata
+          relevant to AI project development and deployment MUST be made available
+          in machine-readable format to inform downstream risk-based controls.
+        applicability:
+          - maturity-3
+
