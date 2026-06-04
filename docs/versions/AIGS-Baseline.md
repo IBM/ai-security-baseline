@@ -1,6 +1,6 @@
 # Open Source AI Project Governance and Security Baseline
 
-Version: devel
+Version: 2026-03-06
 
 {: .warning}
 Not for production use.

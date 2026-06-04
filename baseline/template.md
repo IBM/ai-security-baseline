@@ -1,6 +1,6 @@
 # Open Source AI Project Governance and Security Baseline
 
-Version: devel
+Version: {{ .Catalog.Metadata.Version }}
 
 {: .warning}
 Not for production use.
