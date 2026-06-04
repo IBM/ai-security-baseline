@@ -32,7 +32,7 @@ function toTop() {
 
 ## Overview
 
-The Open Source AI Project Governance and Security Baseline (OSAIPGS Baseline) is designed to act as a minimum set of requirements for AI projects relative to its maturity level. It extends the principles of the [OpenSSF Security Baseline](https://baseline.openssf.org/) to address the unique challenges of developing, deploying, and managing Artificial Intelligence (AI) systems. It is designed to be a foundational guide for ensuring AI systems are secure, robust, transparent, and aligned with governance objectives.
+The Open Source AI Project Governance and Security Baseline (AIGS Baseline) is designed to act as a minimum set of requirements for AI projects relative to its maturity level. It extends the principles of the [OpenSSF Security Baseline](https://baseline.openssf.org/) to address the unique challenges of developing, deploying, and managing Artificial Intelligence (AI) systems. It is designed to be a foundational guide for ensuring AI systems are secure, robust, transparent, and aligned with governance objectives.
 
 For more information on the motive and purpose, see the [FAQ](FAQ.md).
 
@@ -41,10 +41,11 @@ For more information on the project and to make contributions, visit the [GitHub
 ---
 
 ## Controls Overview
+{{ range .Catalog.Metadata.ApplicabilityGroups }}
+{{- $req := . }}
+* [{{ $req.Title }}]({{ $req.Title | asLink }}): {{ $req.Description }}
+{{- end }}
 
-* [Level 1](#level-1): for any code or non-code project with any number of maintainers or users
-* [Level 2](#level-2): for any code project that has at least 2 maintainers and a small number of consistent users
-* [Level 3](#level-3): for any code project that has a large number of consistent users
 
 ### Level 1
 {{ range .Catalog.Controls }}
@@ -52,7 +53,7 @@ For more information on the project and to make contributions, visit the [GitHub
 {{- $req := . }}
 {{- if and (not (isRetired .State)) (maxLevel .Applicability 1) }}
 **[{{ $req.Id }}]({{ $req.Id | asLink }})**: {{ $req.Text | addLinks }}
-{{- end }}
+{{ end }}
 {{- end }}
 {{- end }}
 
@@ -62,7 +63,7 @@ For more information on the project and to make contributions, visit the [GitHub
 {{- $req := . }}
 {{- if and (not (isRetired .State)) (maxLevel .Applicability 2) }}
 **[{{ $req.Id }}]({{ $req.Id | asLink }})**: {{ $req.Text | addLinks }}
-{{- end }}
+{{ end }}
 {{- end }}
 {{- end }}
 
@@ -72,7 +73,7 @@ For more information on the project and to make contributions, visit the [GitHub
 {{- $req := . }}
 {{- if and (not (isRetired .State)) (maxLevel .Applicability 3) }}
 **[{{ $req.Id }}]({{ $req.Id | asLink }})**: {{ $req.Text | addLinks }}
-{{- end }}
+{{ end }}
 {{- end }}
 {{- end }}
 
@@ -97,7 +98,9 @@ For more information on the project and to make contributions, visit the [GitHub
 {{ else -}}
 **Requirement:** {{ .Text | addLinks | collapseNewlines }}
 
+{{ if .Recommendation }}
 **Recommendation:** {{ .Recommendation }}
+{{ end }}
 
 **Control applies to:**
 {{ range .Applicability }}- {{ . | applicabilityTitle }}
@@ -107,8 +110,8 @@ For more information on the project and to make contributions, visit the [GitHub
 
 {{ end }}
 
-#### External Framework Relations
 {{ if  .Guidelines }}
+#### External Framework Relations
   {{ range .Guidelines }}
   - **{{ .ReferenceId | addLinks }}**: {{ range $index, $entry := .Entries }}{{ if $index }}, {{ end }}{{ $entry.ReferenceId }}{{ end }}
   {{- end }}
@@ -119,6 +122,7 @@ For more information on the project and to make contributions, visit the [GitHub
 {{- end }}
 {{- end }}
 
+{{ if .Catalog.Metadata.MappingReferences -}}
 ## External Frameworks
 
 Controls within this document may relate to the following external frameworks:
@@ -128,15 +132,17 @@ Controls within this document may relate to the following external frameworks:
 {{ range .Catalog.Metadata.MappingReferences -}}
 | {{ .Id }} | [{{ .Title }}]({{ .Url }}) | {{ .Version }} | {{ .Description }} |
 {{ end }}
-
 ---
+{{ end }}
 
+{{ if .Lexicon }}
 ## Lexicon
 {{ range .Lexicon }}
 
 ### {{ .Term }}
 
 {{ .Definition }}
+{{ end}}
 
 {{ if .References }}
 **References:**
@@ -144,14 +150,14 @@ Controls within this document may relate to the following external frameworks:
   - {{.}}
 {{ end -}}
 {{ end -}}
+---
 {{ end }}
 
----
 
 ## Acknowledgments
 
 This document was developed, under the leadership of Derek Leist, thanks to contributions from technical experts across IBM Research, in addition to feedback and contributions from external collaborators including:
-- [OSAIPGS Baseline contributors](https://github.com/ibm/ai-security-baseline/graphs/contributors)
+- [AIGS Baseline contributors](https://github.com/ibm/ai-security-baseline/graphs/contributors)
 {{ range .Lexicon }}
 [{{ .Term }}]: {{ .Term | asLink }}
 {{- end }}

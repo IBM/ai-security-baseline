@@ -1,22 +1,35 @@
-title: Open Source Project Security Baseline
+title: Open Source AI Project Governance and Security Baseline
 metadata:
-  id: osps-baseline
+  id: AIGS-baseline
   type: ControlCatalog
-  gemara-version: v1.0.0-rc.2
-  description: |
-    The Open Source Project Security (OSPS) Baseline is a set of security criteria that projects should meet to demonstrate a strong security posture.
-  draft: true
+  gemara-version: "1.0.0"
+  version: "2026-03-06"
+  date: "2026-03-06T00:00:00Z"
+  description: >-
+    Minimum set of requirements for AI projects relative to maturity level.
+    Extends the OpenSSF Security Baseline to address the unique challenges of
+    developing, deploying, and managing AI systems. Designed to be a foundational
+    guide for ensuring AI systems are secure, robust, transparent, and aligned
+    with governance objectives.
   author:
-    id: baseline-authors
-    name: OSPS Baseline Authors
+    id: ibm
+    name: IBM
     type: Human
   applicability-groups:
     - id: maturity-1
-      title: Maturity Level 1
-      description: for any code or non-code project with any number of maintainers or users
+      title: Level 1
+      description: Foundational requirements for all open source AI projects.
     - id: maturity-2
-      title: Maturity Level 2
-      description: for any code project that has at least 2 maintainers and a small number of consistent users
+      title: Level 2
+      description: Intermediate requirements for maturing AI projects.
     - id: maturity-3
-      title: Maturity Level 3
-      description: for any code project that has a large number of consistent users
+      title: Level 3
+      description: Advanced requirements for production AI systems.
+type: Standard
+front-matter: >-
+  The AIGS Baseline controls help AI project maintainers understand governance
+  and security best practices and expectations. Assessing a project's compliance
+  against the controls helps maintainers and downstream users understand where the
+  project meets minimum expected requirements for governance and security controls,
+  and where improvements may be made. The baseline is Focused, Realistic,
+  Actionable, and Meaningful.

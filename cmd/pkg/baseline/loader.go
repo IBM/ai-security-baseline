@@ -101,7 +101,7 @@ func (l *Loader) loadControlFamilies(catalog *gemara.ControlCatalog) error {
 
 	familyPaths := make([]string, 0, len(types.ControlFamilies))
 	for _, familyID := range types.ControlFamilies {
-		familyPath := "file://" + filepath.Join(absData, fmt.Sprintf("OSAIPSG-%s.yaml", familyID))
+		familyPath := "file://" + filepath.Join(absData, fmt.Sprintf("AIGS-%s.yaml", familyID))
 		familyPaths = append(familyPaths, familyPath)
 	}
 
