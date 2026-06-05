@@ -1,3 +1,7 @@
+---
+nav-title: Current Draft
+---
+
 # Open Source AI Project Governance and Security Baseline
 
 Version: 2026-03-06
