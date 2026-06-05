@@ -33,6 +33,14 @@ controls:
     state: Active
     assessment-requirements:
       - id: AIGS-DI-02-01
+        text: >-
+          The project MUST implement robust security controls to protect the
+          confidentiality, integrity, and availability of data.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-DI-02-02
         title: Minimum Data Security Requirements
         text: >-
           Minimum data security requirements MUST include authentication

@@ -16,6 +16,14 @@ controls:
     state: Active
     assessment-requirements:
       - id: AIGS-MR-01-01
+        text: >-
+          The project MUST undertake red teaming to screen for vulnerabilities
+          to adversarial attacks, including prompt injection attacks.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-MR-01-02
         title: Model Robustness Disclosures
         text: >-
           To the extent possible, the project owner SHOULD disclose red teaming
@@ -41,6 +49,16 @@ controls:
     state: Active
     assessment-requirements:
       - id: AIGS-MR-02-01
+        text: >-
+          Prior to deployment, the project team MUST test against publicly available
+          or manually-created, task-specific benchmarks in order to evaluate,
+          quantify, and validate the resilience of the AI project against common
+          vulnerabilities.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-MR-02-02
         title: Evaluations Disclosures
         text: >-
           To the extent possible, the project owner SHOULD disclose evaluation

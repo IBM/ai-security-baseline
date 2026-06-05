@@ -54,9 +54,13 @@ and contributors to the AI project lifecycle from development to
 deployment and ongoing monitoring.
 
 
-**[AIGS-GA-02-01](#aigs-ga-02-01)**: Minimum disclosure requirements MUST include the model name, developer, release date, license, model description, deployment status (as necessary), and URL to the open source model repository (if available) or model release announcement.
+**[AIGS-GA-02-01](#aigs-ga-02-01)**: The project MUST provide written, documented disclosure of the AI models ingested in, called, or otherwise used in the development or deployment of the open source AI project.
 
-**[AIGS-GA-03-01](#aigs-ga-03-01)**: Minimum disclosure requirements for each dataset MUST include the name, country of origin, license, description, data processing (if any), and public URL (if available).
+**[AIGS-GA-02-02](#aigs-ga-02-02)**: Minimum disclosure requirements MUST include the model name, developer, release date, license, model description, deployment status (as necessary), and URL to the open source model repository (if available) or model release announcement.
+
+**[AIGS-GA-03-01](#aigs-ga-03-01)**: The project MUST disclose datasets ingested in or otherwise used in the development or deployment of the open source AI project. This includes datasets used for training, testing, and validation.
+
+**[AIGS-GA-03-02](#aigs-ga-03-02)**: Minimum disclosure requirements for each dataset MUST include the name, country of origin, license, description, data processing (if any), and public URL (if available).
 
 **[AIGS-GA-04-01](#aigs-ga-04-01)**: While active, the project MUST specify a license for the model weights and model files.
 
@@ -72,15 +76,21 @@ deployment and ongoing monitoring.
 
 **[AIGS-DI-01-01](#aigs-di-01-01)**: Track the origin and lineage of all data used for training and testing AI models.
 
-**[AIGS-DI-02-01](#aigs-di-02-01)**: Minimum data security requirements MUST include authentication and authorization.
+**[AIGS-DI-02-01](#aigs-di-02-01)**: The project MUST implement robust security controls to protect the confidentiality, integrity, and availability of data.
+
+**[AIGS-DI-02-02](#aigs-di-02-02)**: Minimum data security requirements MUST include authentication and authorization.
 
 **[AIGS-DI-03-01](#aigs-di-03-01)**: Data access controls MUST be clearly documented and follow the principles of least privilege access.
 
 **[AIGS-DI-04-01](#aigs-di-04-01)**: The project MUST implement controls and testing to prevent the project from inadvertently revealing sensitive information (e.g., PII, proprietary data) from its training set.
 
-**[AIGS-MR-01-01](#aigs-mr-01-01)**: To the extent possible, the project owner SHOULD disclose red teaming methodology and sufficient detail to satisfy downstream users of the model&#39;s robustness to a diverse set of adversarial attacks under deployment-like conditions.
+**[AIGS-MR-01-01](#aigs-mr-01-01)**: The project MUST undertake red teaming to screen for vulnerabilities to adversarial attacks, including prompt injection attacks.
 
-**[AIGS-MR-02-01](#aigs-mr-02-01)**: To the extent possible, the project owner SHOULD disclose evaluation results and sufficient detail to satisfy downstream users of the model&#39;s reliability under a diverse set of deployment-like conditions and tasks.
+**[AIGS-MR-01-02](#aigs-mr-01-02)**: To the extent possible, the project owner SHOULD disclose red teaming methodology and sufficient detail to satisfy downstream users of the model&#39;s robustness to a diverse set of adversarial attacks under deployment-like conditions.
+
+**[AIGS-MR-02-01](#aigs-mr-02-01)**: Prior to deployment, the project team MUST test against publicly available or manually-created, task-specific benchmarks in order to evaluate, quantify, and validate the resilience of the AI project against common vulnerabilities.
+
+**[AIGS-MR-02-02](#aigs-mr-02-02)**: To the extent possible, the project owner SHOULD disclose evaluation results and sufficient detail to satisfy downstream users of the model&#39;s reliability under a diverse set of deployment-like conditions and tasks.
 
 **[AIGS-DE-01-01](#aigs-de-01-01)**: The project MUST implement guardrails to mitigate identified risks, and at a minimum, implement guardrails to mitigate against prompt injection attacks (input).
 
@@ -95,7 +105,9 @@ deployment and ongoing monitoring.
 
 ### Level 2
 
-**[AIGS-GA-07-01](#aigs-ga-07-01)**: The AI policy SHOULD consider topic-specific aspects where necessary to provide additional guidance or provide cross-references to other security and governance policies dealing with these core aspects: AI resources and assets, AI system impact assessment scope, and AI project secure development.
+**[AIGS-GA-07-01](#aigs-ga-07-01)**: The project MUST define an AI policy with principles that guide all activities of the organization related to AI and processes for handling deviations and exceptions to policy.
+
+**[AIGS-GA-07-02](#aigs-ga-07-02)**: The AI policy SHOULD consider topic-specific aspects where necessary to provide additional guidance or provide cross-references to other security and governance policies dealing with these core aspects: AI resources and assets, AI system impact assessment scope, and AI project secure development.
 
 **[AIGS-SC-04-01](#aigs-sc-04-01)**: Embedded AI components MUST be scanned as part of development workflows, including CI/CD pipelines, to prevent application security risks from malicious or otherwise compromised components.
 
@@ -187,6 +199,18 @@ Ensure transparency through written, documented disclosure of AI models ingested
 
 #### AIGS-GA-02-01
 
+**Requirement:** The project MUST provide written, documented disclosure of the AI models ingested in, called, or otherwise used in the development or deployment of the open source AI project.
+
+
+
+**Control applies to:**
+- Level 1
+- Level 2
+- Level 3
+
+
+#### AIGS-GA-02-02
+
 **Requirement:** Minimum disclosure requirements MUST include the model name, developer, release date, license, model description, deployment status (as necessary), and URL to the open source model repository (if available) or model release announcement.
 
 
@@ -208,6 +232,18 @@ Achieve transparency by disclosing datasets ingested in or otherwise used in the
 
 
 #### AIGS-GA-03-01
+
+**Requirement:** The project MUST disclose datasets ingested in or otherwise used in the development or deployment of the open source AI project. This includes datasets used for training, testing, and validation.
+
+
+
+**Control applies to:**
+- Level 1
+- Level 2
+- Level 3
+
+
+#### AIGS-GA-03-02
 
 **Requirement:** Minimum disclosure requirements for each dataset MUST include the name, country of origin, license, description, data processing (if any), and public URL (if available).
 
@@ -296,6 +332,17 @@ Establish governance framework by defining an AI policy with principles that gui
 
 
 #### AIGS-GA-07-01
+
+**Requirement:** The project MUST define an AI policy with principles that guide all activities of the organization related to AI and processes for handling deviations and exceptions to policy.
+
+
+
+**Control applies to:**
+- Level 2
+- Level 3
+
+
+#### AIGS-GA-07-02
 
 **Requirement:** The AI policy SHOULD consider topic-specific aspects where necessary to provide additional guidance or provide cross-references to other security and governance policies dealing with these core aspects: AI resources and assets, AI system impact assessment scope, and AI project secure development.
 
@@ -566,6 +613,18 @@ Protect data through implementation of robust security controls to ensure confid
 
 #### AIGS-DI-02-01
 
+**Requirement:** The project MUST implement robust security controls to protect the confidentiality, integrity, and availability of data.
+
+
+
+**Control applies to:**
+- Level 1
+- Level 2
+- Level 3
+
+
+#### AIGS-DI-02-02
+
 **Requirement:** Minimum data security requirements MUST include authentication and authorization.
 
 
@@ -721,6 +780,18 @@ Strengthen model resilience through red teaming to screen for vulnerabilities to
 
 #### AIGS-MR-01-01
 
+**Requirement:** The project MUST undertake red teaming to screen for vulnerabilities to adversarial attacks, including prompt injection attacks.
+
+
+
+**Control applies to:**
+- Level 1
+- Level 2
+- Level 3
+
+
+#### AIGS-MR-01-02
+
 **Requirement:** To the extent possible, the project owner SHOULD disclose red teaming methodology and sufficient detail to satisfy downstream users of the model&#39;s robustness to a diverse set of adversarial attacks under deployment-like conditions.
 
 
@@ -744,6 +815,18 @@ Validate model performance and security prior to deployment by testing against p
 
 
 #### AIGS-MR-02-01
+
+**Requirement:** Prior to deployment, the project team MUST test against publicly available or manually-created, task-specific benchmarks in order to evaluate, quantify, and validate the resilience of the AI project against common vulnerabilities.
+
+
+
+**Control applies to:**
+- Level 1
+- Level 2
+- Level 3
+
+
+#### AIGS-MR-02-02
 
 **Requirement:** To the extent possible, the project owner SHOULD disclose evaluation results and sufficient detail to satisfy downstream users of the model&#39;s reliability under a diverse set of deployment-like conditions and tasks.
 

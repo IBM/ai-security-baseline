@@ -36,6 +36,15 @@ controls:
     state: Active
     assessment-requirements:
       - id: AIGS-GA-02-01
+        text: >-
+          The project MUST provide written, documented disclosure of the AI models
+          ingested in, called, or otherwise used in the development or deployment
+          of the open source AI project.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-GA-02-02
         title: Minimum Model Disclosure Requirements
         text: >-
           Minimum disclosure requirements MUST include the model name, developer,
@@ -57,6 +66,15 @@ controls:
     state: Active
     assessment-requirements:
       - id: AIGS-GA-03-01
+        text: >-
+          The project MUST disclose datasets ingested in or otherwise used in the
+          development or deployment of the open source AI project. This includes
+          datasets used for training, testing, and validation.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-GA-03-02
         title: Minimum Dataset Disclosure Requirements
         text: >-
           Minimum disclosure requirements for each dataset MUST include the name,
@@ -133,6 +151,14 @@ controls:
     state: Active
     assessment-requirements:
       - id: AIGS-GA-07-01
+        text: >-
+          The project MUST define an AI policy with principles that guide all
+          activities of the organization related to AI and processes for handling
+          deviations and exceptions to policy.
+        applicability:
+          - maturity-2
+          - maturity-3
+      - id: AIGS-GA-07-02
         title: AI Policy Requirements
         text: >-
           The AI policy SHOULD consider topic-specific aspects where necessary
