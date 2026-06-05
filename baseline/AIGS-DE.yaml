@@ -1,9 +1,9 @@
-group:
-  id: DE
-  title: Deployment
-  description: >-
-    Controls related to secure deployment, monitoring, incident response,
-    and runtime safeguards.
+groups:
+  - id: DE
+    title: Deployment
+    description: >-
+      Controls related to secure deployment, monitoring, incident response,
+      and runtime safeguards.
 
 controls:
   # ── Level 1 · Deployment ──

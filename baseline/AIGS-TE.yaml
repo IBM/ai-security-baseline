@@ -1,9 +1,9 @@
-group:
-  id: TE
-  title: Transparency and Explainability
-  description: >-
-    Controls related to system documentation, explainability, risk
-    documentation, and incident reporting.
+groups:
+  - id: TE
+    title: Transparency and Explainability
+    description: >-
+      Controls related to system documentation, explainability, risk
+      documentation, and incident reporting.
 
 controls:
   # ── Level 1 · Transparency and Explainability ──

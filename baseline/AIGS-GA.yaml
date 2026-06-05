@@ -1,9 +1,9 @@
-group:
-  id: GA
-  title: Governance and Accountability
-  description: >-
-    Controls related to organizational governance, roles, policies,
-    and accountability for AI projects.
+groups:
+  - id: GA
+    title: Governance and Accountability
+    description: >-
+      Controls related to organizational governance, roles, policies,
+      and accountability for AI projects.
 
 controls:
   # ── Level 1 · Governance and Accountability ──

@@ -1,9 +1,9 @@
-group:
-  id: DI
-  title: Data Integrity
-  description: >-
-    Controls related to data governance, security, access control,
-    and leakage prevention.
+groups:
+  - id: DI
+    title: Data Integrity
+    description: >-
+      Controls related to data governance, security, access control,
+      and leakage prevention.
 
 controls:
   # ── Level 1 · Data Integrity ──

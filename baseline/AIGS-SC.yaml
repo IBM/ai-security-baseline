@@ -1,9 +1,9 @@
-group:
-  id: SC
-  title: Supply Chain Security
-  description: >-
-    Controls related to securing the AI supply chain, including data sourcing,
-    component scanning, and model provenance.
+groups:
+  - id: SC
+    title: Supply Chain Security
+    description: >-
+      Controls related to securing the AI supply chain, including data sourcing,
+      component scanning, and model provenance.
 
 controls:
   # ── Level 1 · Supply Chain Security ──

@@ -1,9 +1,9 @@
-group:
-  id: MR
-  title: Model Robustness
-  description: >-
-    Controls related to adversarial testing, evaluations, and resilience
-    of AI models.
+groups:
+  - id: MR
+    title: Model Robustness
+    description: >-
+      Controls related to adversarial testing, evaluations, and resilience
+      of AI models.
 
 controls:
   # ── Level 1 · Model Robustness ──
