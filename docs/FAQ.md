@@ -1,3 +1,7 @@
+---
+nav-title: FAQ
+---
+
 # Open Source AI Project Governance and Security Baseline FAQ
 
 
