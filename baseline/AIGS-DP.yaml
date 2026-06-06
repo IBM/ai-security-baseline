@@ -1,5 +1,5 @@
 groups:
-  - id: DE
+  - id: DP
     title: Deployment
     description: >-
       Controls related to secure deployment, monitoring, incident response,
@@ -7,15 +7,15 @@ groups:
 
 controls:
   # ── Level 1 · Deployment ──
-  - id: AIGS-DE-01
+  - id: AIGS-DP-01
     title: Guardrails
     objective: >-
       Mitigate deployment risks by implementing guardrails to address identified risks,
       with minimum coverage for prompt injection attacks (input).
-    group: DE
+    group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DE-01-01
+      - id: AIGS-DP-01-01
         text: >-
           The project MUST implement guardrails to mitigate identified risks, and
           at a minimum, implement guardrails to mitigate against prompt injection
@@ -25,16 +25,16 @@ controls:
           - maturity-2
           - maturity-3
 
-  - id: AIGS-DE-02
+  - id: AIGS-DP-02
     title: Vulnerability Disclosure Mechanism
     objective: >-
       Enable responsible disclosure by establishing a defined communication channel
       or mechanism through which vulnerabilities and other security-related information
       may be disclosed to project contributors and maintainers.
-    group: DE
+    group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DE-02-01
+      - id: AIGS-DP-02-01
         text: >-
           The project MUST have a defined communication channel or mechanism
           through which vulnerabilities and other security-related information
@@ -44,14 +44,14 @@ controls:
           - maturity-2
           - maturity-3
 
-  - id: AIGS-DE-03
+  - id: AIGS-DP-03
     title: Insecure Output Handling
     objective: >-
       Prevent downstream vulnerabilities by validating and sanitizing model outputs.
-    group: DE
+    group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DE-03-01
+      - id: AIGS-DP-03-01
         text: >-
           The project MUST validate and sanitize model outputs to prevent
           downstream vulnerabilities.
@@ -61,16 +61,16 @@ controls:
           - maturity-3
 
   # ── Level 2 · Deployment ──
-  - id: AIGS-DE-04
+  - id: AIGS-DP-04
     title: Deployment Infrastructure
     objective: >-
       Secure deployment infrastructure by ensuring access to models, tools and tool calling
       functionality, and general deployment scaffolding or infrastructure follows
       least-privilege principles.
-    group: DE
+    group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DE-04-01
+      - id: AIGS-DP-04-01
         text: >-
           Access to models, tools and tool calling functionality, and general
           deployment scaffolding or infrastructure MUST follow least-privilege
@@ -79,15 +79,15 @@ controls:
           - maturity-2
           - maturity-3
 
-  - id: AIGS-DE-05
+  - id: AIGS-DP-05
     title: Logging and Monitoring
     objective: >-
       Enable threat detection by implementing logging and monitoring for deployment
       environments, including tool use, to detect misuse or anomalies.
-    group: DE
+    group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DE-05-01
+      - id: AIGS-DP-05-01
         text: >-
           The project MUST implement logging and monitoring for deployment
           environments, including tool use, to detect misuse or anomalies.
@@ -95,15 +95,15 @@ controls:
           - maturity-2
           - maturity-3
 
-  - id: AIGS-DE-06
+  - id: AIGS-DP-06
     title: Incident Response Procedures
     objective: >-
       Establish incident response capability by defining procedures for responding to
       security incidents involving the AI project in a timely manner.
-    group: DE
+    group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DE-06-01
+      - id: AIGS-DP-06-01
         text: >-
           The project MUST define procedures for responding to security incidents
           involving the AI project in a timely manner.
@@ -111,15 +111,15 @@ controls:
           - maturity-2
           - maturity-3
 
-  - id: AIGS-DE-07
+  - id: AIGS-DP-07
     title: Project Maintenance
     objective: >-
       Ensure sustainable maintenance by documenting processes for releasing model updates
       and security patches.
-    group: DE
+    group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DE-07-01
+      - id: AIGS-DP-07-01
         text: >-
           The project MUST document processes for releasing model updates and
           security patches.
@@ -128,16 +128,16 @@ controls:
           - maturity-3
 
   # ── Level 3 · Deployment ──
-  - id: AIGS-DE-08
+  - id: AIGS-DP-08
     title: Runtime Safeguards
     objective: >-
       Protect production systems by including runtime safeguards in deployment environments
       for detecting and mitigating malicious inputs and outputs and unexpected or
       unauthorized system-level behavior.
-    group: DE
+    group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DE-08-01
+      - id: AIGS-DP-08-01
         text: >-
           Deployment environments MUST include runtime safeguards for detecting
           and mitigating malicious inputs and outputs and unexpected or
@@ -145,16 +145,16 @@ controls:
         applicability:
           - maturity-3
 
-  - id: AIGS-DE-09
+  - id: AIGS-DP-09
     title: Kill Switch
     objective: >-
       Enable emergency response by implementing a security mechanism designed to
       immediately halt, disable, or contain an AI project if it is believed to behave
       in dangerous or unpredictable ways causing harm.
-    group: DE
+    group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DE-09-01
+      - id: AIGS-DP-09-01
         text: >-
           The project MUST implement a security mechanism designed to immediately
           halt, disable, or contain an AI project if it is believed to behave

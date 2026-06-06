@@ -10,7 +10,7 @@ var ControlFamilies = []string{
 	"SC",
 	"DI",
 	"MR",
-	"DE",
+	"DP",
 	"TE",
 }
 

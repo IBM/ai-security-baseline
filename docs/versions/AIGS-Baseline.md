@@ -92,11 +92,11 @@ deployment and ongoing monitoring.
 
 **[AIGS-MR-02-02](#aigs-mr-02-02)**: To the extent possible, the project owner SHOULD disclose evaluation results and sufficient detail to satisfy downstream users of the model&#39;s reliability under a diverse set of deployment-like conditions and tasks.
 
-**[AIGS-DE-01-01](#aigs-de-01-01)**: The project MUST implement guardrails to mitigate identified risks, and at a minimum, implement guardrails to mitigate against prompt injection attacks (input).
+**[AIGS-DP-01-01](#aigs-dp-01-01)**: The project MUST implement guardrails to mitigate identified risks, and at a minimum, implement guardrails to mitigate against prompt injection attacks (input).
 
-**[AIGS-DE-02-01](#aigs-de-02-01)**: The project MUST have a defined communication channel or mechanism through which vulnerabilities and other security-related information MAY be disclosed to the project contributors and maintainers.
+**[AIGS-DP-02-01](#aigs-dp-02-01)**: The project MUST have a defined communication channel or mechanism through which vulnerabilities and other security-related information MAY be disclosed to the project contributors and maintainers.
 
-**[AIGS-DE-03-01](#aigs-de-03-01)**: The project MUST validate and sanitize model outputs to prevent downstream vulnerabilities.
+**[AIGS-DP-03-01](#aigs-dp-03-01)**: The project MUST validate and sanitize model outputs to prevent downstream vulnerabilities.
 
 **[AIGS-TE-01-01](#aigs-te-01-01)**: Where feasible, the project MUST provide explanations for design decisions that affect project performance and security.
 
@@ -129,13 +129,13 @@ deployment and ongoing monitoring.
 
 **[AIGS-MR-05-01](#aigs-mr-05-01)**: The project MUST document the scope and limitations of testing.
 
-**[AIGS-DE-04-01](#aigs-de-04-01)**: Access to models, tools and tool calling functionality, and general deployment scaffolding or infrastructure MUST follow least-privilege principles.
+**[AIGS-DP-04-01](#aigs-dp-04-01)**: Access to models, tools and tool calling functionality, and general deployment scaffolding or infrastructure MUST follow least-privilege principles.
 
-**[AIGS-DE-05-01](#aigs-de-05-01)**: The project MUST implement logging and monitoring for deployment environments, including tool use, to detect misuse or anomalies.
+**[AIGS-DP-05-01](#aigs-dp-05-01)**: The project MUST implement logging and monitoring for deployment environments, including tool use, to detect misuse or anomalies.
 
-**[AIGS-DE-06-01](#aigs-de-06-01)**: The project MUST define procedures for responding to security incidents involving the AI project in a timely manner.
+**[AIGS-DP-06-01](#aigs-dp-06-01)**: The project MUST define procedures for responding to security incidents involving the AI project in a timely manner.
 
-**[AIGS-DE-07-01](#aigs-de-07-01)**: The project MUST document processes for releasing model updates and security patches.
+**[AIGS-DP-07-01](#aigs-dp-07-01)**: The project MUST document processes for releasing model updates and security patches.
 
 
 ### Level 3
@@ -152,9 +152,9 @@ deployment and ongoing monitoring.
 
 **[AIGS-MR-07-01](#aigs-mr-07-01)**: The project MUST evaluate models used in the AI project at runtime against an evolving suite of standardized robustness benchmarks.
 
-**[AIGS-DE-08-01](#aigs-de-08-01)**: Deployment environments MUST include runtime safeguards for detecting and mitigating malicious inputs and outputs and unexpected or unauthorized system-level behavior.
+**[AIGS-DP-08-01](#aigs-dp-08-01)**: Deployment environments MUST include runtime safeguards for detecting and mitigating malicious inputs and outputs and unexpected or unauthorized system-level behavior.
 
-**[AIGS-DE-09-01](#aigs-de-09-01)**: The project MUST implement a security mechanism designed to immediately halt, disable, or contain an AI project if it is believed to behave in dangerous or unpredictable ways causing harm.
+**[AIGS-DP-09-01](#aigs-dp-09-01)**: The project MUST implement a security mechanism designed to immediately halt, disable, or contain an AI project if it is believed to behave in dangerous or unpredictable ways causing harm.
 
 **[AIGS-TE-03-01](#aigs-te-03-01)**: The project MUST document residual risks and known limitations of safeguards.
 
@@ -953,13 +953,13 @@ Controls related to secure deployment, monitoring, incident response, and runtim
 
 
 
-### AIGS-DE-01 - Guardrails
+### AIGS-DP-01 - Guardrails
 
 Mitigate deployment risks by implementing guardrails to address identified risks, with minimum coverage for prompt injection attacks (input).
 
 
 
-#### AIGS-DE-01-01
+#### AIGS-DP-01-01
 
 **Requirement:** The project MUST implement guardrails to mitigate identified risks, and at a minimum, implement guardrails to mitigate against prompt injection attacks (input).
 
@@ -975,13 +975,13 @@ Mitigate deployment risks by implementing guardrails to address identified risks
 
 ---
 
-### AIGS-DE-02 - Vulnerability Disclosure Mechanism
+### AIGS-DP-02 - Vulnerability Disclosure Mechanism
 
 Enable responsible disclosure by establishing a defined communication channel or mechanism through which vulnerabilities and other security-related information may be disclosed to project contributors and maintainers.
 
 
 
-#### AIGS-DE-02-01
+#### AIGS-DP-02-01
 
 **Requirement:** The project MUST have a defined communication channel or mechanism through which vulnerabilities and other security-related information MAY be disclosed to the project contributors and maintainers.
 
@@ -997,13 +997,13 @@ Enable responsible disclosure by establishing a defined communication channel or
 
 ---
 
-### AIGS-DE-03 - Insecure Output Handling
+### AIGS-DP-03 - Insecure Output Handling
 
 Prevent downstream vulnerabilities by validating and sanitizing model outputs.
 
 
 
-#### AIGS-DE-03-01
+#### AIGS-DP-03-01
 
 **Requirement:** The project MUST validate and sanitize model outputs to prevent downstream vulnerabilities.
 
@@ -1019,13 +1019,13 @@ Prevent downstream vulnerabilities by validating and sanitizing model outputs.
 
 ---
 
-### AIGS-DE-04 - Deployment Infrastructure
+### AIGS-DP-04 - Deployment Infrastructure
 
 Secure deployment infrastructure by ensuring access to models, tools and tool calling functionality, and general deployment scaffolding or infrastructure follows least-privilege principles.
 
 
 
-#### AIGS-DE-04-01
+#### AIGS-DP-04-01
 
 **Requirement:** Access to models, tools and tool calling functionality, and general deployment scaffolding or infrastructure MUST follow least-privilege principles.
 
@@ -1040,13 +1040,13 @@ Secure deployment infrastructure by ensuring access to models, tools and tool ca
 
 ---
 
-### AIGS-DE-05 - Logging and Monitoring
+### AIGS-DP-05 - Logging and Monitoring
 
 Enable threat detection by implementing logging and monitoring for deployment environments, including tool use, to detect misuse or anomalies.
 
 
 
-#### AIGS-DE-05-01
+#### AIGS-DP-05-01
 
 **Requirement:** The project MUST implement logging and monitoring for deployment environments, including tool use, to detect misuse or anomalies.
 
@@ -1061,13 +1061,13 @@ Enable threat detection by implementing logging and monitoring for deployment en
 
 ---
 
-### AIGS-DE-06 - Incident Response Procedures
+### AIGS-DP-06 - Incident Response Procedures
 
 Establish incident response capability by defining procedures for responding to security incidents involving the AI project in a timely manner.
 
 
 
-#### AIGS-DE-06-01
+#### AIGS-DP-06-01
 
 **Requirement:** The project MUST define procedures for responding to security incidents involving the AI project in a timely manner.
 
@@ -1082,13 +1082,13 @@ Establish incident response capability by defining procedures for responding to 
 
 ---
 
-### AIGS-DE-07 - Project Maintenance
+### AIGS-DP-07 - Project Maintenance
 
 Ensure sustainable maintenance by documenting processes for releasing model updates and security patches.
 
 
 
-#### AIGS-DE-07-01
+#### AIGS-DP-07-01
 
 **Requirement:** The project MUST document processes for releasing model updates and security patches.
 
@@ -1103,13 +1103,13 @@ Ensure sustainable maintenance by documenting processes for releasing model upda
 
 ---
 
-### AIGS-DE-08 - Runtime Safeguards
+### AIGS-DP-08 - Runtime Safeguards
 
 Protect production systems by including runtime safeguards in deployment environments for detecting and mitigating malicious inputs and outputs and unexpected or unauthorized system-level behavior.
 
 
 
-#### AIGS-DE-08-01
+#### AIGS-DP-08-01
 
 **Requirement:** Deployment environments MUST include runtime safeguards for detecting and mitigating malicious inputs and outputs and unexpected or unauthorized system-level behavior.
 
@@ -1123,13 +1123,13 @@ Protect production systems by including runtime safeguards in deployment environ
 
 ---
 
-### AIGS-DE-09 - Kill Switch
+### AIGS-DP-09 - Kill Switch
 
 Enable emergency response by implementing a security mechanism designed to immediately halt, disable, or contain an AI project if it is believed to behave in dangerous or unpredictable ways causing harm.
 
 
 
-#### AIGS-DE-09-01
+#### AIGS-DP-09-01
 
 **Requirement:** The project MUST implement a security mechanism designed to immediately halt, disable, or contain an AI project if it is believed to behave in dangerous or unpredictable ways causing harm.
 
