@@ -16,7 +16,7 @@ controls:
     group: GA
     assessment-requirements:
       - id: AIGS-GA-01-01
-        text: |
+        text: >-
           The project MUST document the roles and responsibilities for maintainers
           and contributors to the AI project lifecycle from development to
           deployment and ongoing monitoring.
@@ -45,7 +45,6 @@ controls:
           - maturity-2
           - maturity-3
       - id: AIGS-GA-02-02
-        title: Minimum Model Disclosure Requirements
         text: >-
           Minimum disclosure requirements MUST include the model name, developer,
           release date, license, model description, deployment status (as
@@ -75,7 +74,6 @@ controls:
           - maturity-2
           - maturity-3
       - id: AIGS-GA-03-02
-        title: Minimum Dataset Disclosure Requirements
         text: >-
           Minimum disclosure requirements for each dataset MUST include the name,
           country of origin, license, description, data processing (if any), and
@@ -159,7 +157,6 @@ controls:
           - maturity-2
           - maturity-3
       - id: AIGS-GA-07-02
-        title: AI Policy Requirements
         text: >-
           The AI policy SHOULD consider topic-specific aspects where necessary
           to provide additional guidance or provide cross-references to other
