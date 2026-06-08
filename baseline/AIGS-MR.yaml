@@ -24,7 +24,6 @@ controls:
           - maturity-2
           - maturity-3
       - id: AIGS-MR-01-02
-        title: Model Robustness Disclosures
         text: >-
           To the extent possible, the project owner SHOULD disclose red teaming
           methodology and sufficient detail to satisfy downstream users of the
@@ -59,7 +58,6 @@ controls:
           - maturity-2
           - maturity-3
       - id: AIGS-MR-02-02
-        title: Evaluations Disclosures
         text: >-
           To the extent possible, the project owner SHOULD disclose evaluation
           results and sufficient detail to satisfy downstream users of the

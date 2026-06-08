@@ -2,7 +2,7 @@ title: Open Source AI Project Governance and Security Baseline
 metadata:
   id: AIGS-baseline
   type: ControlCatalog
-  gemara-version: "1.0.0"
+  gemara-version: "1.2.0"
   version: "2026-03-06"
   date: "2026-03-06T00:00:00Z"
   description: >-
@@ -25,11 +25,3 @@ metadata:
     - id: maturity-3
       title: Level 3
       description: Advanced requirements for production AI systems.
-type: Standard
-front-matter: >-
-  The AIGS Baseline controls help AI project maintainers understand governance
-  and security best practices and expectations. Assessing a project's compliance
-  against the controls helps maintainers and downstream users understand where the
-  project meets minimum expected requirements for governance and security controls,
-  and where improvements may be made. The baseline is Focused, Realistic,
-  Actionable, and Meaningful.

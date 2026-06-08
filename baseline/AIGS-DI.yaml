@@ -41,7 +41,6 @@ controls:
           - maturity-2
           - maturity-3
       - id: AIGS-DI-02-02
-        title: Minimum Data Security Requirements
         text: >-
           Minimum data security requirements MUST include authentication
           and authorization.
