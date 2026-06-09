@@ -15,7 +15,7 @@ controls:
       deployment and ongoing monitoring.
     group: GA
     assessment-requirements:
-      - id: AIGS-GA-01-01
+      - id: AIGS-GA-01.01
         text: >-
           The project MUST document the roles and responsibilities for maintainers
           and contributors to the AI project lifecycle from development to
@@ -35,7 +35,7 @@ controls:
     group: GA
     state: Active
     assessment-requirements:
-      - id: AIGS-GA-02-01
+      - id: AIGS-GA-02.01
         text: >-
           The project MUST provide written, documented disclosure of the AI models
           ingested in, called, or otherwise used in the development or deployment
@@ -44,7 +44,7 @@ controls:
           - maturity-1
           - maturity-2
           - maturity-3
-      - id: AIGS-GA-02-02
+      - id: AIGS-GA-02.02
         text: >-
           Minimum disclosure requirements MUST include the model name, developer,
           release date, license, model description, deployment status (as
@@ -64,7 +64,7 @@ controls:
     group: GA
     state: Active
     assessment-requirements:
-      - id: AIGS-GA-03-01
+      - id: AIGS-GA-03.01
         text: >-
           The project MUST disclose datasets ingested in or otherwise used in the
           development or deployment of the open source AI project. This includes
@@ -73,7 +73,7 @@ controls:
           - maturity-1
           - maturity-2
           - maturity-3
-      - id: AIGS-GA-03-02
+      - id: AIGS-GA-03.02
         text: >-
           Minimum disclosure requirements for each dataset MUST include the name,
           country of origin, license, description, data processing (if any), and
@@ -91,7 +91,7 @@ controls:
     group: GA
     state: Active
     assessment-requirements:
-      - id: AIGS-GA-04-01
+      - id: AIGS-GA-04.01
         text: >-
           While active, the project MUST specify a license for the model weights
           and model files.
@@ -109,7 +109,7 @@ controls:
     group: GA
     state: Active
     assessment-requirements:
-      - id: AIGS-GA-05-01
+      - id: AIGS-GA-05.01
         text: >-
           The project MUST define and document the intended use of the open source
           AI project, including the ethical principles that guide open source AI
@@ -128,7 +128,7 @@ controls:
     group: GA
     state: Active
     assessment-requirements:
-      - id: AIGS-GA-06-01
+      - id: AIGS-GA-06.01
         text: >-
           The project MUST maintain an inventory of its components, tooling, systems
           and applications, disclosed within the README of the repository where the
@@ -148,7 +148,7 @@ controls:
     group: GA
     state: Active
     assessment-requirements:
-      - id: AIGS-GA-07-01
+      - id: AIGS-GA-07.01
         text: >-
           The project MUST define an AI policy with principles that guide all
           activities of the organization related to AI and processes for handling
@@ -156,7 +156,7 @@ controls:
         applicability:
           - maturity-2
           - maturity-3
-      - id: AIGS-GA-07-02
+      - id: AIGS-GA-07.02
         text: >-
           The AI policy SHOULD consider topic-specific aspects where necessary
           to provide additional guidance or provide cross-references to other
@@ -181,7 +181,7 @@ controls:
     group: GA
     state: Active
     assessment-requirements:
-      - id: AIGS-GA-08-01
+      - id: AIGS-GA-08.01
         text: >-
           To the extent the open source AI project meets regulatory requirements
           and standards for the deployment of AI models and systems, the project
@@ -198,7 +198,7 @@ controls:
     group: GA
     state: Active
     assessment-requirements:
-      - id: AIGS-GA-09-01
+      - id: AIGS-GA-09.01
         text: >-
           While active, structured disclosures of relevant model and data metadata
           relevant to AI project development and deployment MUST be made available

@@ -15,7 +15,7 @@ controls:
     group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DP-01-01
+      - id: AIGS-DP-01.01
         text: >-
           The project MUST implement guardrails to mitigate identified risks, and
           at a minimum, implement guardrails to mitigate against prompt injection
@@ -34,7 +34,7 @@ controls:
     group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DP-02-01
+      - id: AIGS-DP-02.01
         text: >-
           The project MUST have a defined communication channel or mechanism
           through which vulnerabilities and other security-related information
@@ -51,7 +51,7 @@ controls:
     group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DP-03-01
+      - id: AIGS-DP-03.01
         text: >-
           The project MUST validate and sanitize model outputs to prevent
           downstream vulnerabilities.
@@ -70,7 +70,7 @@ controls:
     group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DP-04-01
+      - id: AIGS-DP-04.01
         text: >-
           Access to models, tools and tool calling functionality, and general
           deployment scaffolding or infrastructure MUST follow least-privilege
@@ -87,7 +87,7 @@ controls:
     group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DP-05-01
+      - id: AIGS-DP-05.01
         text: >-
           The project MUST implement logging and monitoring for deployment
           environments, including tool use, to detect misuse or anomalies.
@@ -103,7 +103,7 @@ controls:
     group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DP-06-01
+      - id: AIGS-DP-06.01
         text: >-
           The project MUST define procedures for responding to security incidents
           involving the AI project in a timely manner.
@@ -119,7 +119,7 @@ controls:
     group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DP-07-01
+      - id: AIGS-DP-07.01
         text: >-
           The project MUST document processes for releasing model updates and
           security patches.
@@ -137,7 +137,7 @@ controls:
     group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DP-08-01
+      - id: AIGS-DP-08.01
         text: >-
           Deployment environments MUST include runtime safeguards for detecting
           and mitigating malicious inputs and outputs and unexpected or
@@ -154,7 +154,7 @@ controls:
     group: DP
     state: Active
     assessment-requirements:
-      - id: AIGS-DP-09-01
+      - id: AIGS-DP-09.01
         text: >-
           The project MUST implement a security mechanism designed to immediately
           halt, disable, or contain an AI project if it is believed to behave

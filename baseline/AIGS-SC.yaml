@@ -16,7 +16,7 @@ controls:
     group: SC
     state: Active
     assessment-requirements:
-      - id: AIGS-SC-01-01
+      - id: AIGS-SC-01.01
         text: >-
           The project MUST implement controls to detect and prevent the
           unintentional sourcing of poisoned data. Controls MUST be documented
@@ -35,7 +35,7 @@ controls:
     group: SC
     state: Active
     assessment-requirements:
-      - id: AIGS-SC-02-01
+      - id: AIGS-SC-02.01
         text: >-
           To the extent web crawling is used to source data, web crawling activity
           MUST respect robots.txt requirements, the crawler MUST be clearly
@@ -54,7 +54,7 @@ controls:
     group: SC
     state: Active
     assessment-requirements:
-      - id: AIGS-SC-03-01
+      - id: AIGS-SC-03.01
         text: >-
           The project MUST use a version control system and have a documented
           process for reviewing and approving changes.
@@ -73,7 +73,7 @@ controls:
     group: SC
     state: Active
     assessment-requirements:
-      - id: AIGS-SC-04-01
+      - id: AIGS-SC-04.01
         text: >-
           Embedded AI components MUST be scanned as part of development workflows,
           including CI/CD pipelines, to prevent application security risks from
@@ -91,7 +91,7 @@ controls:
     group: SC
     state: Active
     assessment-requirements:
-      - id: AIGS-SC-05-01
+      - id: AIGS-SC-05.01
         text: >-
           The project MUST document and secure the training pipeline used to
           produce model artifacts, including dependencies, training code, and
@@ -108,7 +108,7 @@ controls:
     group: SC
     state: Active
     assessment-requirements:
-      - id: AIGS-SC-06-01
+      - id: AIGS-SC-06.01
         text: >-
           The project MUST maintain provenance records linking model artifacts,
           training datasets, training code, and training parameters.
@@ -125,7 +125,7 @@ controls:
     group: SC
     state: Active
     assessment-requirements:
-      - id: AIGS-SC-07-01
+      - id: AIGS-SC-07.01
         text: >-
           Where feasible, the project SHOULD support reproducible model builds
           such that independent parties can recreate the model artifacts from
@@ -147,7 +147,7 @@ controls:
     group: SC
     state: Active
     assessment-requirements:
-      - id: AIGS-SC-08-01
+      - id: AIGS-SC-08.01
         text: >-
           The project MUST sign AI models, model files, and/or other release
           artifacts with cryptographic tools and verify them before deployment
