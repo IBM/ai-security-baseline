@@ -15,7 +15,7 @@ controls:
     group: TE
     state: Active
     assessment-requirements:
-      - id: AIGS-TE-01-01
+      - id: AIGS-TE-01.01
         text: >-
           Where feasible, the project MUST provide explanations for design
           decisions that affect project performance and security.
@@ -33,7 +33,7 @@ controls:
     group: TE
     state: Active
     assessment-requirements:
-      - id: AIGS-TE-02-01
+      - id: AIGS-TE-02.01
         text: >-
           Project contributors MUST maintain clear and comprehensive documentation
           for the AI system, including its intended use, limitations, and
@@ -52,7 +52,7 @@ controls:
     group: TE
     state: Active
     assessment-requirements:
-      - id: AIGS-TE-03-01
+      - id: AIGS-TE-03.01
         text: >-
           The project MUST document residual risks and known limitations
           of safeguards.
@@ -67,7 +67,7 @@ controls:
     group: TE
     state: Active
     assessment-requirements:
-      - id: AIGS-TE-04-01
+      - id: AIGS-TE-04.01
         text: >-
           The project MUST maintain a public record of safety and security
           incidents and ex post mitigations.
