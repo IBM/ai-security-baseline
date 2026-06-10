@@ -7,7 +7,7 @@ nav-title: FAQ
 
 ## What's the purpose of the AIGS Baseline?
 
-The [Open Source AI Project Governance and Security Baseline (AIGS Baseline)](AIGS-Baseline.md) is designed to act as a minimum set of requirements for AI projects relative to its maturity level. It builds on the [Open Source Project Security](https://baseline.openssf.org/versions/2025-10-10-checklist.md) (OSPS) Baseline to bring common security standards to open source AI projects, and recognizing the importance of governance controls in secure AI supply chains, incorporates new standards on data and model governance.
+The [Open Source AI Project Governance and Security Baseline (AIGS Baseline)](versions/devel.md) is designed to act as a minimum set of requirements for AI projects relative to its maturity level. It builds on the [Open Source Project Security](https://baseline.openssf.org/versions/2025-10-10-checklist.md) (OSPS) Baseline to bring common security standards to open source AI projects, and recognizing the importance of governance controls in secure AI supply chains, incorporates new standards on data and model governance.
 
 Overall, the Baseline aims to help maintainers, contributors, and other downstream users quickly understand and adopt fundamental governance and security steps. This includes establishing access-controlled environments for data acquisition and storage, setting up responsible disclosure policies, and maintaining base project hygiene. By meeting this Baseline, an open source AI project signals that it has taken the minimum measures required to reduce risk of common vulnerabilities and improve the overall trustworthiness of the project to its adopters and contributors.
 
