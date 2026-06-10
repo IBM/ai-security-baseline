@@ -1,0 +1,75 @@
+groups:
+  - id: TE
+    title: Transparency and Explainability
+    description: >-
+      Controls related to system documentation, explainability, risk
+      documentation, and incident reporting.
+
+controls:
+  # ── Level 1 · Transparency and Explainability ──
+  - id: AIGS-TE-01
+    title: Explainability
+    objective: >-
+      Enhance understanding by providing explanations for design
+      decisions that affect project performance and security, where feasible.
+    group: TE
+    state: Active
+    assessment-requirements:
+      - id: AIGS-TE-01.01
+        text: >-
+          Where feasible, the project MUST provide explanations for design
+          decisions that affect project performance and security.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-TE-02
+    title: System Documentation
+    objective: >-
+      Ensure system transparency through clear and comprehensive documentation
+      of the AI system, including its intended use, limitations, and
+      potential risks.
+    group: TE
+    state: Active
+    assessment-requirements:
+      - id: AIGS-TE-02.01
+        text: >-
+          Project contributors MUST maintain clear and comprehensive documentation
+          for the AI system, including its intended use, limitations, and
+          potential risks.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  # ── Level 3 · Transparency and Explainability ──
+  - id: AIGS-TE-03
+    title: Residual Risk Documentation
+    objective: >-
+      Promote informed decision-making by documenting residual risks and known limitations
+      of safeguards.
+    group: TE
+    state: Active
+    assessment-requirements:
+      - id: AIGS-TE-03.01
+        text: >-
+          The project MUST document residual risks and known limitations
+          of safeguards.
+        applicability:
+          - maturity-3
+
+  - id: AIGS-TE-04
+    title: Security Incident Reporting
+    objective: >-
+      Foster transparency and learning by maintaining a public record of safety and security
+      incidents and ex post mitigations.
+    group: TE
+    state: Active
+    assessment-requirements:
+      - id: AIGS-TE-04.01
+        text: >-
+          The project MUST maintain a public record of safety and security
+          incidents and ex post mitigations.
+        applicability:
+          - maturity-3

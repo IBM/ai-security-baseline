@@ -1,0 +1,154 @@
+groups:
+  - id: DI
+    title: Data Integrity
+    description: >-
+      Controls related to data governance, security, access control,
+      and leakage prevention.
+
+controls:
+  # ── Level 1 · Data Integrity ──
+  - id: AIGS-DI-01
+    title: Enforceable Data Policy
+    objective: >-
+      Maintain data provenance by tracking the origin and lineage of all data
+      used for training and testing AI models.
+    group: DI
+    state: Active
+    assessment-requirements:
+      - id: AIGS-DI-01.01
+        text: >-
+          Track the origin and lineage of all data used for training and testing
+          AI models.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-DI-02
+    title: Data Security
+    objective: >-
+      Protect data through implementation of robust security controls to ensure
+      confidentiality, integrity, and availability.
+    group: DI
+    state: Active
+    assessment-requirements:
+      - id: AIGS-DI-02.01
+        text: >-
+          The project MUST implement robust security controls to protect the
+          confidentiality, integrity, and availability of data.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-DI-02.02
+        text: >-
+          Minimum data security requirements MUST include authentication
+          and authorization.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-DI-03
+    title: Data Least Privilege Access
+    objective: >-
+      Implement secure access management through clearly documented data access
+      controls that follow the principles of least privilege.
+    group: DI
+    state: Active
+    assessment-requirements:
+      - id: AIGS-DI-03.01
+        text: >-
+          Data access controls MUST be clearly documented and follow the
+          principles of least privilege access.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-DI-04
+    title: Sensitive and Copyright Data Leakage Prevention
+    objective: >-
+      Prevent data leakage by implementing controls and testing to avoid
+      inadvertently revealing sensitive information (e.g., PII, proprietary
+      data) from the training set.
+    group: DI
+    state: Active
+    assessment-requirements:
+      - id: AIGS-DI-04.01
+        text: >-
+          The project MUST implement controls and testing to prevent the project
+          from inadvertently revealing sensitive information (e.g., PII, proprietary
+          data) from its training set.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
+  # ── Level 2 · Data Integrity ──
+  - id: AIGS-DI-05
+    title: Dataset Cataloguing
+    objective: >-
+      Maintain dataset traceability by tracking and versioning datasets
+      used for training and evaluation to ensure reproducibility.
+    group: DI
+    state: Active
+    assessment-requirements:
+      - id: AIGS-DI-05.01
+        text: >-
+          Datasets used for training and evaluation MUST be tracked and versioned
+          to ensure traceability and reproducibility.
+        applicability:
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-DI-06
+    title: Dataset Risk Assessment
+    objective: >-
+      Mitigate dataset risks by assessing datasets for, at a minimum, legal and copyright
+      risk, licensing compatibility with project intended use, and security
+      risks (e.g., data poisoning, PII/SPI).
+    group: DI
+    state: Active
+    assessment-requirements:
+      - id: AIGS-DI-06.01
+        text: >-
+          The project MUST assess datasets for, at a minimum, legal and copyright
+          risk, licensing compatibility with project intended use, and security
+          risks (e.g., data poisoning, PII/SPI).
+        applicability:
+          - maturity-2
+          - maturity-3
+
+  - id: AIGS-DI-07
+    title: Data Risk Minimization
+    objective: >-
+      Minimize data exposure by implementing controls to limit the use of unnecessary
+      or high-risk data.
+    group: DI
+    state: Active
+    assessment-requirements:
+      - id: AIGS-DI-07.01
+        text: >-
+          The project MUST implement controls to limit the use of unnecessary
+          or high-risk data.
+        applicability:
+          - maturity-2
+          - maturity-3
+
+  # ── Level 3 · Data Integrity ──
+  - id: AIGS-DI-08
+    title: Full Audit Logging
+    objective: >-
+      Maintain comprehensive audit trail by logging read or write access to data,
+      with timestamp, user id, action performed (read/write), and dataset id and
+      version(s) accessed.
+    group: DI
+    state: Active
+    assessment-requirements:
+      - id: AIGS-DI-08.01
+        text: >-
+          Read or write access to data MUST be logged, with timestamp, user id,
+          action performed (read/write), and dataset id and version(s) accessed.
+        applicability:
+          - maturity-3
