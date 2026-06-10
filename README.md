@@ -4,6 +4,8 @@ The [Open Source AI Project Governance and Security Baseline (AIGS Baseline)](do
 
 For more information on the motive and purpose, see the [Blog post](https://developer.ibm.com/blogs/open-source-ai-project-gov-security-baseline/) and [FAQ](docs/FAQ.md).
 
+The content of this repo can also be viewed on our [website](https://ibm.github.io/ai-security-baseline).
+
 # Acknowledgement
 
 This document was developed thanks to contributions from technical experts across IBM Research, in addition to feedback and contributions from external collaborators, under the leadership of Derek Leist.
