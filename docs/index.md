@@ -8,7 +8,7 @@ For more information on the motive and purpose, see the [Blog post](https://deve
 
 And, please, check the current draft of the [AI Governance and Security Baseline](versions/devel.md).
 
-Please submit your feedback by opening an [issue](https://github.com/IBM/ai-governance-security-baseline/issues).
+Please submit your feedback by opening an [issue](https://github.com/IBM/ai-security-baseline/issues).
 
 # Acknowledgement
 
