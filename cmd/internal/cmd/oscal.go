@@ -80,13 +80,24 @@ OSCAL controls.
 				return err
 			}
 
-			// TODO: Open the output file
+			w := os.Stdout
+			if opts.outPath != "" {
+				f, err := os.Create(opts.outPath)
+				if err != nil {
+					return fmt.Errorf("creating output file: %w", err)
+				}
+				defer f.Close() //nolint:errcheck
+				w = f
+			}
 
 			gen := baseline.NewGenerator()
-			if err := gen.ExportOSCAL(bline, os.Stdout); err != nil {
+			if err := gen.ExportOSCAL(bline, w); err != nil {
 				return err
 			}
 
+			if opts.outPath != "" {
+				fmt.Fprintf(os.Stderr, "OSCAL JSON written to %s\n", opts.outPath)
+			}
 			return nil
 		},
 	}
