@@ -16,8 +16,25 @@ kramdown:
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
 
 remote_theme: jekyll/minima
+
+# Default layouts (previously chosen by the jekyll-default-layout plugin
+# bundled with the github-pages gem): "home" for the index page,
+# "page" for every other page.
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "index.md"
+      type: "pages"
+    values:
+      layout: "home"
 
 # Minima-specific settings (applicable to Minima v3 and above only)
 # -----------------------------------------------------------------
