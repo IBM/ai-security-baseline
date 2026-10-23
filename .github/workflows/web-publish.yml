@@ -35,6 +35,8 @@ jobs:
           ruby-version: '3.4.11' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
+        env:
+          BUNDLE_GEMFILE: docs/Gemfile
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - name: Build content from yaml
