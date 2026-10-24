@@ -75,6 +75,10 @@ For more information on the project and to make contributions, visit the [GitHub
 
 **[AIGS-SC-03.01](#aigs-sc-0301)**: The project MUST use a version control system and have a documented process for reviewing and approving changes.
 
+**[AIGS-SC-09.01](#aigs-sc-0901)**: To the extent AI agents in the project invoke tools, the project MUST record a cryptographic digest of each tool definition, covering the complete definition as supplied, including at least its name, any display title, description, annotations, and input and output schemas, when the tool is approved for use and again at each invocation, and MUST retain both records. Each record MUST identify the server or source that supplied the tool as configured by the project, not as reported by that server.
+
+**[AIGS-SC-09.02](#aigs-sc-0902)**: Each record MUST state which fields the digest covers and any normalization applied before hashing. Normalization MUST NOT remove or alter any character within a field value, including invisible characters (e.g., zero-width, bidirectional control, and tag characters).
+
 **[AIGS-DI-01.01](#aigs-di-0101)**: Track the origin and lineage of all data used for training and testing AI models.
 
 **[AIGS-DI-02.01](#aigs-di-0201)**: The project MUST implement robust security controls to protect the confidentiality, integrity, and availability of data.
@@ -118,6 +122,10 @@ For more information on the project and to make contributions, visit the [GitHub
 
 **[AIGS-SC-07.01](#aigs-sc-0701)**: Where feasible, the project SHOULD support reproducible model builds such that independent parties can recreate the model artifacts from disclosed inputs.
 
+**[AIGS-SC-10.01](#aigs-sc-1001)**: Before each invocation, the project MUST compare the digest of the tool definition with the digest recorded when that tool was approved, and MUST flag any mismatch and record it with that invocation.
+
+**[AIGS-SC-10.02](#aigs-sc-1002)**: A tool definition with no approved digest, supplied by a server or source that already has approved tool definitions, MUST be treated as a mismatch and MUST NOT be recorded as approved without an explicit approval decision.
+
 **[AIGS-DI-05.01](#aigs-di-0501)**: Datasets used for training and evaluation MUST be tracked and versioned to ensure traceability and reproducibility.
 
 **[AIGS-DI-06.01](#aigs-di-0601)**: The project MUST assess datasets for, at a minimum, legal and copyright risk, licensing compatibility with project intended use, and security risks (e.g., data poisoning, PII/SPI).
@@ -146,6 +154,8 @@ For more information on the project and to make contributions, visit the [GitHub
 **[AIGS-GA-09.01](#aigs-ga-0901)**: While active, structured disclosures of relevant model and data metadata relevant to AI project development and deployment MUST be made available in machine-readable format to inform downstream risk-based controls.
 
 **[AIGS-SC-08.01](#aigs-sc-0801)**: The project MUST sign AI models, model files, and/or other release artifacts with cryptographic tools and verify them before deployment to prevent the introduction of untrusted components.
+
+**[AIGS-SC-11.01](#aigs-sc-1101)**: Deployment environments MUST block invocation of a tool whose definition does not match its approved digest, including a tool treated as a mismatch under AIGS-SC-10.02, until the changed definition has been approved.
 
 **[AIGS-DI-08.01](#aigs-di-0801)**: Read or write access to data MUST be logged, with timestamp, user id, action performed (read/write), and dataset id and version(s) accessed.
 
@@ -472,6 +482,40 @@ Establish robust change management through use of a version control system and a
 
 ---
 
+### AIGS-SC-09 - Tool Definition Recording
+
+Establish tool traceability by recording a digest of each tool definition, and the server or source that supplied it, when the tool is approved for use and at each invocation.
+
+
+
+#### AIGS-SC-09.01
+
+**Requirement:** To the extent AI agents in the project invoke tools, the project MUST record a cryptographic digest of each tool definition, covering the complete definition as supplied, including at least its name, any display title, description, annotations, and input and output schemas, when the tool is approved for use and again at each invocation, and MUST retain both records. Each record MUST identify the server or source that supplied the tool as configured by the project, not as reported by that server.
+
+
+
+**Control applies to:**
+- Level 1
+- Level 2
+- Level 3
+
+
+#### AIGS-SC-09.02
+
+**Requirement:** Each record MUST state which fields the digest covers and any normalization applied before hashing. Normalization MUST NOT remove or alter any character within a field value, including invisible characters (e.g., zero-width, bidirectional control, and tag characters).
+
+
+
+**Control applies to:**
+- Level 1
+- Level 2
+- Level 3
+
+
+
+
+---
+
 ### AIGS-SC-04 - AI Components Scanning
 
 Secure the supply chain by scanning embedded AI components as part of development workflows, including CI/CD pipelines, to prevent application security risks from malicious or otherwise compromised components.
@@ -558,6 +602,38 @@ Enable verification through support for reproducible model builds, where feasibl
 
 ---
 
+### AIGS-SC-10 - Tool Definition Change Detection
+
+Enable change detection by comparing each tool definition at invocation with the digest recorded when the tool was approved, including for a tool renamed so that it has no approved digest.
+
+
+
+#### AIGS-SC-10.01
+
+**Requirement:** Before each invocation, the project MUST compare the digest of the tool definition with the digest recorded when that tool was approved, and MUST flag any mismatch and record it with that invocation.
+
+
+
+**Control applies to:**
+- Level 2
+- Level 3
+
+
+#### AIGS-SC-10.02
+
+**Requirement:** A tool definition with no approved digest, supplied by a server or source that already has approved tool definitions, MUST be treated as a mismatch and MUST NOT be recorded as approved without an explicit approval decision.
+
+
+
+**Control applies to:**
+- Level 2
+- Level 3
+
+
+
+
+---
+
 ### AIGS-SC-08 - Model Integrity
 
 Ensure artifact integrity by signing AI models, model files, and/or other release artifacts with cryptographic tools and verifying them before deployment to prevent the introduction of untrusted components.
@@ -567,6 +643,26 @@ Ensure artifact integrity by signing AI models, model files, and/or other releas
 #### AIGS-SC-08.01
 
 **Requirement:** The project MUST sign AI models, model files, and/or other release artifacts with cryptographic tools and verify them before deployment to prevent the introduction of untrusted components.
+
+
+
+**Control applies to:**
+- Level 3
+
+
+
+
+---
+
+### AIGS-SC-11 - Tool Definition Integrity
+
+Ensure tool integrity by blocking invocation of any tool whose definition does not match its approved digest until the change is approved.
+
+
+
+#### AIGS-SC-11.01
+
+**Requirement:** Deployment environments MUST block invocation of a tool whose definition does not match its approved digest, including a tool treated as a mismatch under AIGS-SC-10.02, until the changed definition has been approved.
 
 
 
