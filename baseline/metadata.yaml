@@ -1,0 +1,27 @@
+title: Open Source AI Project Governance and Security Baseline
+metadata:
+  id: AIGS-baseline
+  type: ControlCatalog
+  gemara-version: "1.2.0"
+  version: "2026-03-06"
+  date: "2026-03-06T00:00:00Z"
+  description: >-
+    Minimum set of requirements for AI projects relative to maturity level.
+    Extends the OpenSSF Security Baseline to address the unique challenges of
+    developing, deploying, and managing AI systems. Designed to be a foundational
+    guide for ensuring AI systems are secure, robust, transparent, and aligned
+    with governance objectives.
+  author:
+    id: ibm
+    name: IBM
+    type: Human
+  applicability-groups:
+    - id: maturity-1
+      title: Level 1
+      description: Foundational requirements for all open source AI projects.
+    - id: maturity-2
+      title: Level 2
+      description: Intermediate requirements for maturing AI projects.
+    - id: maturity-3
+      title: Level 3
+      description: Advanced requirements for production AI systems.
