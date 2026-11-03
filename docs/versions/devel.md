@@ -4,7 +4,7 @@ nav-title: Current Draft
 
 # Open Source AI Project Governance and Security Baseline
 
-Version: 2026-03-06
+Version: 2026-11-03
 
 {: .warning}
 Not for production use.
@@ -53,21 +53,15 @@ For more information on the project and to make contributions, visit the [GitHub
 
 ### Level 1
 
-**[AIGS-GA-01.01](#aigs-ga-0101)**: The project MUST document the roles and responsibilities for maintainers and contributors to the AI project lifecycle from development to deployment and ongoing monitoring.
+**[AIGS-GA-01.01](#aigs-ga-0101)**: The project MUST provide written, documented disclosure of the AI models ingested in, called, or otherwise used in the development or deployment of the open source AI project.
 
-**[AIGS-GA-02.01](#aigs-ga-0201)**: The project MUST provide written, documented disclosure of the AI models ingested in, called, or otherwise used in the development or deployment of the open source AI project.
+**[AIGS-GA-01.02](#aigs-ga-0102)**: Minimum disclosure requirements MUST include the model name, developer, release date, license, model description, deployment status (as necessary), and URL to the open source model repository (if available) or model release announcement.
 
-**[AIGS-GA-02.02](#aigs-ga-0202)**: Minimum disclosure requirements MUST include the model name, developer, release date, license, model description, deployment status (as necessary), and URL to the open source model repository (if available) or model release announcement.
+**[AIGS-GA-02.01](#aigs-ga-0201)**: The project MUST disclose datasets ingested in or otherwise used in the development or deployment of the open source AI project. This includes datasets used for training, testing, and validation.
 
-**[AIGS-GA-03.01](#aigs-ga-0301)**: The project MUST disclose datasets ingested in or otherwise used in the development or deployment of the open source AI project. This includes datasets used for training, testing, and validation.
+**[AIGS-GA-03.01](#aigs-ga-0301)**: While active, the project MUST specify a license for the model weights and model files.
 
-**[AIGS-GA-03.02](#aigs-ga-0302)**: Minimum disclosure requirements for each dataset MUST include the name, country of origin, license, description, data processing (if any), and public URL (if available).
-
-**[AIGS-GA-04.01](#aigs-ga-0401)**: While active, the project MUST specify a license for the model weights and model files.
-
-**[AIGS-GA-05.01](#aigs-ga-0501)**: The project MUST define and document the intended use of the open source AI project, including the ethical principles that guide open source AI project development and deployment.
-
-**[AIGS-GA-06.01](#aigs-ga-0601)**: The project MUST maintain an inventory of its components, tooling, systems and applications, disclosed within the README of the repository where the project is made available.
+**[AIGS-GA-04.01](#aigs-ga-0401)**: The project MUST define and document the intended use of the open source AI project, including the ethical principles that guide open source AI project development and deployment.
 
 **[AIGS-SC-01.01](#aigs-sc-0101)**: The project MUST implement controls to detect and prevent the unintentional sourcing of poisoned data. Controls MUST be documented and disclosed.
 
@@ -106,9 +100,11 @@ For more information on the project and to make contributions, visit the [GitHub
 
 ### Level 2
 
-**[AIGS-GA-07.01](#aigs-ga-0701)**: The project MUST define an AI policy with principles that guide all activities of the organization related to AI and processes for handling deviations and exceptions to policy.
+**[AIGS-GA-05.01](#aigs-ga-0501)**: The project MUST document the roles and responsibilities for maintainers and contributors to the AI project lifecycle from development to deployment and ongoing monitoring.
 
-**[AIGS-GA-07.02](#aigs-ga-0702)**: The AI policy SHOULD consider topic-specific aspects where necessary to provide additional guidance or provide cross-references to other security and governance policies dealing with these core aspects: AI resources and assets, AI system impact assessment scope, and AI project secure development.
+**[AIGS-GA-06.01](#aigs-ga-0601)**: The project MUST define an AI policy with principles that guide all activities of the organization related to AI and processes for handling deviations and exceptions to policy.
+
+**[AIGS-GA-06.02](#aigs-ga-0602)**: The AI policy SHOULD consider topic-specific aspects where necessary to provide additional guidance or provide cross-references to other security and governance policies dealing with these core aspects: AI resources and assets, AI system impact assessment scope, and AI project secure development.
 
 **[AIGS-SC-04.01](#aigs-sc-0401)**: Embedded AI components MUST be scanned as part of development workflows, including CI/CD pipelines, to prevent application security risks from malicious or otherwise compromised components.
 
@@ -141,9 +137,11 @@ For more information on the project and to make contributions, visit the [GitHub
 
 ### Level 3
 
-**[AIGS-GA-08.01](#aigs-ga-0801)**: To the extent the open source AI project meets regulatory requirements and standards for the deployment of AI models and systems, the project MUST disclose (non-)compliance.
+**[AIGS-GA-07.01](#aigs-ga-0701)**: To the extent the open source AI project meets regulatory requirements and standards for the deployment of AI models and systems, the project MUST disclose (non-)compliance.
 
-**[AIGS-GA-09.01](#aigs-ga-0901)**: While active, structured disclosures of relevant model and data metadata relevant to AI project development and deployment MUST be made available in machine-readable format to inform downstream risk-based controls.
+**[AIGS-GA-08.01](#aigs-ga-0801)**: While active, structured disclosures of relevant model and data metadata relevant to AI project development and deployment MUST be made available in machine-readable format to inform downstream risk-based controls.
+
+**[AIGS-GA-09.01](#aigs-ga-0901)**: The project MUST maintain an inventory of its components, tooling, systems and applications, disclosed within the README of the repository where the project is made available.
 
 **[AIGS-SC-08.01](#aigs-sc-0801)**: The project MUST sign AI models, model files, and/or other release artifacts with cryptographic tools and verify them before deployment to prevent the introduction of untrusted components.
 
@@ -170,35 +168,13 @@ Controls related to organizational governance, roles, policies, and accountabili
 
 
 
-### AIGS-GA-01 - Contributor Roles and Responsibilities
-
-Establish clear documentation of roles and responsibilities for maintainers and contributors throughout the AI project lifecycle from development to deployment and ongoing monitoring.
-
-
-
-#### AIGS-GA-01.01
-
-**Requirement:** The project MUST document the roles and responsibilities for maintainers and contributors to the AI project lifecycle from development to deployment and ongoing monitoring.
-
-
-
-**Control applies to:**
-- Level 1
-- Level 2
-- Level 3
-
-
-
-
----
-
-### AIGS-GA-02 - Model Governance
+### AIGS-GA-01 - Model Governance
 
 Ensure transparency through written, documented disclosure of AI models ingested in, called, or otherwise used in the development or deployment of the open source AI project.
 
 
 
-#### AIGS-GA-02.01
+#### AIGS-GA-01.01
 
 **Requirement:** The project MUST provide written, documented disclosure of the AI models ingested in, called, or otherwise used in the development or deployment of the open source AI project.
 
@@ -210,7 +186,7 @@ Ensure transparency through written, documented disclosure of AI models ingested
 - Level 3
 
 
-#### AIGS-GA-02.02
+#### AIGS-GA-01.02
 
 **Requirement:** Minimum disclosure requirements MUST include the model name, developer, release date, license, model description, deployment status (as necessary), and URL to the open source model repository (if available) or model release announcement.
 
@@ -226,27 +202,15 @@ Ensure transparency through written, documented disclosure of AI models ingested
 
 ---
 
-### AIGS-GA-03 - Data Governance
+### AIGS-GA-02 - Data Governance
 
 Achieve transparency by disclosing datasets ingested in or otherwise used in the development or deployment of the open source AI project, including datasets used for training, testing, and validation.
 
 
 
-#### AIGS-GA-03.01
+#### AIGS-GA-02.01
 
 **Requirement:** The project MUST disclose datasets ingested in or otherwise used in the development or deployment of the open source AI project. This includes datasets used for training, testing, and validation.
-
-
-
-**Control applies to:**
-- Level 1
-- Level 2
-- Level 3
-
-
-#### AIGS-GA-03.02
-
-**Requirement:** Minimum disclosure requirements for each dataset MUST include the name, country of origin, license, description, data processing (if any), and public URL (if available).
 
 
 
@@ -260,13 +224,13 @@ Achieve transparency by disclosing datasets ingested in or otherwise used in the
 
 ---
 
-### AIGS-GA-04 - Licensing
+### AIGS-GA-03 - Licensing
 
 Establish clear licensing by specifying a license for the model weights and model files while the project is active.
 
 
 
-#### AIGS-GA-04.01
+#### AIGS-GA-03.01
 
 **Requirement:** While active, the project MUST specify a license for the model weights and model files.
 
@@ -282,13 +246,13 @@ Establish clear licensing by specifying a license for the model weights and mode
 
 ---
 
-### AIGS-GA-05 - Ethics and Intended Use
+### AIGS-GA-04 - Ethics and Intended Use
 
 Define and document the intended use of the open source AI project, including the ethical principles that guide open source AI project development and deployment.
 
 
 
-#### AIGS-GA-05.01
+#### AIGS-GA-04.01
 
 **Requirement:** The project MUST define and document the intended use of the open source AI project, including the ethical principles that guide open source AI project development and deployment.
 
@@ -304,20 +268,19 @@ Define and document the intended use of the open source AI project, including th
 
 ---
 
-### AIGS-GA-06 - Project Inventory
+### AIGS-GA-05 - Contributor Roles and Responsibilities
 
-Maintain comprehensive visibility through an inventory of components, tooling, systems and applications, disclosed within the README of the repository where the project is made available.
+Establish clear documentation of roles and responsibilities for maintainers and contributors throughout the AI project lifecycle from development to deployment and ongoing monitoring.
 
 
 
-#### AIGS-GA-06.01
+#### AIGS-GA-05.01
 
-**Requirement:** The project MUST maintain an inventory of its components, tooling, systems and applications, disclosed within the README of the repository where the project is made available.
+**Requirement:** The project MUST document the roles and responsibilities for maintainers and contributors to the AI project lifecycle from development to deployment and ongoing monitoring.
 
 
 
 **Control applies to:**
-- Level 1
 - Level 2
 - Level 3
 
@@ -326,13 +289,13 @@ Maintain comprehensive visibility through an inventory of components, tooling, s
 
 ---
 
-### AIGS-GA-07 - AI Policy
+### AIGS-GA-06 - AI Policy
 
 Establish governance framework by defining an AI policy with principles that guide all activities of the organization related to AI and processes for handling deviations and exceptions to policy.
 
 
 
-#### AIGS-GA-07.01
+#### AIGS-GA-06.01
 
 **Requirement:** The project MUST define an AI policy with principles that guide all activities of the organization related to AI and processes for handling deviations and exceptions to policy.
 
@@ -343,7 +306,7 @@ Establish governance framework by defining an AI policy with principles that gui
 - Level 3
 
 
-#### AIGS-GA-07.02
+#### AIGS-GA-06.02
 
 **Requirement:** The AI policy SHOULD consider topic-specific aspects where necessary to provide additional guidance or provide cross-references to other security and governance policies dealing with these core aspects: AI resources and assets, AI system impact assessment scope, and AI project secure development.
 
@@ -360,13 +323,13 @@ Establish governance framework by defining an AI policy with principles that gui
 
 ---
 
-### AIGS-GA-08 - Regulatory Compliance
+### AIGS-GA-07 - Regulatory Compliance
 
 Demonstrate regulatory awareness by disclosing compliance status to the extent the open source AI project meets regulatory requirements and standards for the deployment of AI models and systems.
 
 
 
-#### AIGS-GA-08.01
+#### AIGS-GA-07.01
 
 **Requirement:** To the extent the open source AI project meets regulatory requirements and standards for the deployment of AI models and systems, the project MUST disclose (non-)compliance.
 
@@ -380,15 +343,35 @@ Demonstrate regulatory awareness by disclosing compliance status to the extent t
 
 ---
 
-### AIGS-GA-09 - AI Bill of Materials
+### AIGS-GA-08 - AI Bill of Materials
 
 Enable downstream risk management by making structured disclosures of relevant model and data metadata available in machine-readable format while the project is active, to inform downstream risk-based controls.
 
 
 
-#### AIGS-GA-09.01
+#### AIGS-GA-08.01
 
 **Requirement:** While active, structured disclosures of relevant model and data metadata relevant to AI project development and deployment MUST be made available in machine-readable format to inform downstream risk-based controls.
+
+
+
+**Control applies to:**
+- Level 3
+
+
+
+
+---
+
+### AIGS-GA-09 - Project Inventory
+
+Maintain comprehensive visibility through an inventory of components, tooling, systems and applications, disclosed within the README of the repository where the project is made available.
+
+
+
+#### AIGS-GA-09.01
+
+**Requirement:** The project MUST maintain an inventory of its components, tooling, systems and applications, disclosed within the README of the repository where the project is made available.
 
 
 

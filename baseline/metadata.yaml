@@ -3,8 +3,8 @@ metadata:
   id: AIGS-baseline
   type: ControlCatalog
   gemara-version: "1.2.0"
-  version: "2026-03-06"
-  date: "2026-03-06T00:00:00Z"
+  version: "2026-11-03"
+  date: "2026-1-03T00:00:00Z"
   description: >-
     Minimum set of requirements for AI projects relative to maturity level.
     Extends the OpenSSF Security Baseline to address the unique challenges of
