@@ -23,21 +23,15 @@ The OSAIPGS Baseline controls help AI project maintainers to understand governan
 
 #### 1. Governance and Accountability
 
-1.1 *Contributor Roles and Responsibilities*: The project MUST document the roles and responsibilities for maintainers and contributors to the AI project's lifecycle from development to deployment and ongoing monitoring.
+1.1 *Model Governance:* The project MUST provide written, documented disclosure of the AI models ingested in, called, or otherwise used in the development or deployment of the open source AI project.
 
-1.2 *Model Governance:* The project MUST provide written, documented disclosure of the AI models ingested in, called, or otherwise used in the development or deployment of the open source AI project.
+1.1a Minimum disclosure requirements MUST include the model name, developer, release date, license, model description, deployment status (as necessary), and URL to the open source model repository (if available) or model release announcement.
 
-1.2a Minimum disclosure requirements MUST include the model name, developer, release date, license, model description, deployment status (as necessary), and URL to the open source model repository (if available) or model release announcement.
+1.2 *Data Governance*: The project MUST disclose datasets ingested in or otherwise used in the development or deployment of the open source AI project. This includes datasets used for training, testing, and validation.
 
-1.3 *Data Governance*: The project MUST disclose datasets ingested in or otherwise used in the development or deployment of the open source AI project. This includes datasets used for training, testing, and validation.
+1.3 *Licensing*: While active, the project MUST specify a license for the model weights and model files.
 
-1.3a Minimum disclosure requirements for each dataset MUST include the name, country of origin, license, description, data processing (if any), and public URL (if available).
-
-1.4 *Licensing*: While active, the project MUST specify a license for the model weights and model files.
-
-1.5 *Ethics and Intended Use*: The project MUST define and document the intended use of the open source AI project, including the ethical principles that guide open source AI project development and deployment.
-
-1.6 *Project* *Inventory*: The project MUST maintain an inventory of its components, tooling, systems and applications, disclosed within the README of the repository where the project is made available.
+1.4 *Ethics and Intended Use*: The project MUST define and document the intended use of the open source AI project, including the ethical principles that guide open source AI project development and deployment.
 
 #### 2. Supply Chain Security
 
@@ -87,9 +81,11 @@ The OSAIPGS Baseline controls help AI project maintainers to understand governan
 
 #### 1. Governance and Accountability
 
-1.7 *AI Policy*: The project MUST define an AI policy with i) principles that guide all activities of the organization related to AI and ii) processes for handling deviations and exceptions to policy.
+1.5 *Contributor Roles and Responsibilities*: The project MUST document the roles and responsibilities for maintainers and contributors to the AI project's lifecycle from development to deployment and ongoing monitoring.
 
-1.7a *AI Policy Requirements:* The AI policy should consider topic-specific aspects where necessary to provide additional guidance or provide cross-references to other security and governance policies dealing with these core aspects: i) AI resources and assets; ii) AI system impact assessment scope; and iii) AI project secure development.
+1.6 *AI Policy*: The project MUST define an AI policy with i) principles that guide all activities of the organization related to AI and ii) processes for handling deviations and exceptions to policy.
+
+1.6a *AI Policy Requirements:* The AI policy should consider topic-specific aspects where necessary to provide additional guidance or provide cross-references to other security and governance policies dealing with these core aspects: i) AI resources and assets; ii) AI system impact assessment scope; and iii) AI project secure development.
 
 #### 2. Supply Chain Security
 
@@ -135,9 +131,11 @@ TBD
 
 #### 1. Governance and Accountability
 
-1.8 *Regulatory Compliance*: To the extent the open source AI project meets regulatory requirements and standards for the deployment of AI models and systems, the project MUST disclose (non-)compliance.
+1.7 *Regulatory Compliance*: To the extent the open source AI project meets regulatory requirements and standards for the deployment of AI models and systems, the project MUST disclose (non-)compliance.
 
-1.9 *AI Bill of Materials:* While active, structured disclosures of relevant model and data metadata relevant to AI project development and deployment MUST be made available in machine-readable format to inform downstream risk-based controls.
+1.8 *AI Bill of Materials:* While active, structured disclosures of relevant model and data metadata relevant to AI project development and deployment MUST be made available in machine-readable format to inform downstream risk-based controls.
+
+1.9 *Project Inventory*: The project MUST maintain an inventory of its components, tooling, systems and applications, disclosed within the README of the repository where the project is made available.
 
 #### 2. Supply Chain Security
 
