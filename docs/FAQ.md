@@ -63,4 +63,4 @@ To use an analogy, the Baseline is similar to construction site guidelines that 
 
 ## How can I get involved in the AIGS Baseline project?
 
-The AIGS Baseline project welcomes contributions in this Github Repository. For discussion, feel free to open an issue!
+The AIGS Baseline project welcomes contributions in this GitHub Repository. For discussion, feel free to open an issue!
