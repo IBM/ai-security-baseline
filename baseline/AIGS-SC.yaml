@@ -63,6 +63,41 @@ controls:
           - maturity-2
           - maturity-3
 
+  - id: AIGS-SC-09
+    title: Tool Definition Recording
+    objective: >-
+      Establish tool traceability by recording a digest of each tool definition,
+      and the server or source that supplied it, when the tool is approved for
+      use and at each invocation.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-09.01
+        text: >-
+          To the extent AI agents in the project invoke tools, the project MUST
+          record a cryptographic digest of each tool definition, covering the
+          complete definition as supplied, including at least its name, any
+          display title, description, annotations, and input and output
+          schemas, when the tool is approved for use and again at each
+          invocation, and MUST retain both records. Each record MUST identify
+          the server or source that supplied the tool as configured by the
+          project, not as reported by that server.
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-SC-09.02
+        text: >-
+          Each record MUST state which fields the digest covers and any
+          normalization applied before hashing. Normalization MUST NOT remove
+          or alter any character within a field value, including invisible
+          characters (e.g., zero-width, bidirectional control, and tag
+          characters).
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+
   # ── Level 2 · Supply Chain Security ──
   - id: AIGS-SC-04
     title: AI Components Scanning
@@ -137,6 +172,33 @@ controls:
           Provide sufficient documentation and tooling for independent parties
           to reproduce model builds from disclosed inputs.
 
+  - id: AIGS-SC-10
+    title: Tool Definition Change Detection
+    objective: >-
+      Enable change detection by comparing each tool definition at invocation
+      with the digest recorded when the tool was approved, including for a tool
+      renamed so that it has no approved digest.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-10.01
+        text: >-
+          Before each invocation, the project MUST compare the digest of the
+          tool definition with the digest recorded when that tool was approved,
+          and MUST flag any mismatch and record it with that invocation.
+        applicability:
+          - maturity-2
+          - maturity-3
+      - id: AIGS-SC-10.02
+        text: >-
+          A tool definition with no approved digest, supplied by a server or
+          source that already has approved tool definitions, MUST be treated
+          as a mismatch and MUST NOT be recorded as approved without an
+          explicit approval decision.
+        applicability:
+          - maturity-2
+          - maturity-3
+
   # ── Level 3 · Supply Chain Security ──
   - id: AIGS-SC-08
     title: Model Integrity
@@ -152,5 +214,22 @@ controls:
           The project MUST sign AI models, model files, and/or other release
           artifacts with cryptographic tools and verify them before deployment
           to prevent the introduction of untrusted components.
+        applicability:
+          - maturity-3
+
+  - id: AIGS-SC-11
+    title: Tool Definition Integrity
+    objective: >-
+      Ensure tool integrity by blocking invocation of any tool whose definition
+      does not match its approved digest until the change is approved.
+    group: SC
+    state: Active
+    assessment-requirements:
+      - id: AIGS-SC-11.01
+        text: >-
+          Deployment environments MUST block invocation of a tool whose
+          definition does not match its approved digest, including a tool
+          treated as a mismatch under AIGS-SC-10.02, until the changed
+          definition has been approved.
         applicability:
           - maturity-3
